@@ -1,0 +1,37 @@
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+@mixin typeset($type: primary-14, $fw: null, $lt: null) {
+
+    // @debug $type;
+
+    $type: map-get($font-types, $type);
+    $font-size:  map-get($type, font-size);
+
+    @include font-size($font-size);
+
+    @if map-has-key($type, font-family) {
+        font-family: map-get($type, font-family);
+    }
+
+    @if map-has-key($type, font-weight) and $fw == null {
+        font-weight: map-get($type, font-weight );
+    } @else if ($fw) {
+        font-weight: $fw;
+    }
+
+    @if map-has-key($type, letter-spacing) and $lt == null {
+        letter-spacing: map-get($type, letter-spacing );
+    } @else if ($lt) {
+        letter-spacing: $lt;
+    }
+    
+}
+

@@ -1,0 +1,37 @@
+@mixin box($w, $h: $w) {
+    width: $w;
+    height: $h;
+}
+
+@mixin circle($w) {
+    @include box($w);
+    border-radius: 50%;
+}
+
+//directions:
+//top , bottom , left , right
+@mixin triangle($h, $w, $direction, $color) {
+    width: 0;
+    height: 0;
+    @if $direction == top {
+        border-bottom: $h solid $color;
+        border-left: $w solid transparent;
+        border-right: $w solid transparent;
+    } @else if $direction == right {
+        border-left: $h solid $color;
+        border-top: $w solid transparent;
+        border-bottom: $w solid transparent;
+    } @else if $direction == bottom {
+        border-top: $h solid $color;
+        border-left: $w solid transparent;
+        border-right: $w solid transparent;
+    } @else if $direction == left{
+        border-right: $h solid $color;
+        border-top: $w solid transparent;
+        border-bottom: $w solid transparent;
+    }
+}
+
+@mixin hexagon() {
+    
+}

@@ -1,0 +1,7 @@
+@import "abstract/abstract";
+@import "components/components";
+
+body {
+    background: $gray-300;
+    @include typeset("primary-28");
+}

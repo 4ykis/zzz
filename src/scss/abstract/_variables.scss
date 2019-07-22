@@ -1,0 +1,60 @@
+
+// colors
+$red: #dd172b;
+$blue: #0030af;
+$green: #66b20e;
+$yellow: #f7c90b;
+$orange: #fc9320;
+$white: #fff;
+$black: #000;
+
+$gray-100: #ebebeb;
+$gray-200: #ccc;
+$gray-300: #737373;
+$gray-400: #444;
+$gray-500: #333;
+$gray-600: #1b1b1b;
+
+$borders: #000;
+$bg-main: #fff;
+
+$primary-color: #34aa34;
+$primary-font-color: $gray-600;
+$secondary-color: #2222ff;
+$secondary-font-color: $white;
+
+//fonts
+
+$font-primary: "Arial", sans-serif !default;
+$font-secondary: serif;
+
+$font-types: (
+    primary-11: ( font-size: 11px, font-family: $font-primary, font-weight: 400, letter-spacing: normal ),
+    primary-14: ( font-size: 14px, font-family: $font-primary, font-weight: 400, letter-spacing: normal ),
+    primary-18: ( font-size: 18px, font-family: $font-primary, font-weight: 400, letter-spacing: normal ),
+    primary-22: ( font-size: 22px, font-family: $font-primary, font-weight: 400, letter-spacing: normal ),
+    primary-28: ( font-size: 28px, font-family: $font-primary, font-weight: 400, letter-spacing: normal ),
+    primary-42: ( font-size: 42px, font-family: $font-primary, font-weight: 400, letter-spacing: normal ),
+    secondary-11: ( font-size: 11px, font-family: $font-secondary, font-weight: 400, letter-spacing: normal ),
+    secondary-14: ( font-size: 14px, font-family: $font-secondary, font-weight: 400, letter-spacing: normal ),
+    secondary-18: ( font-size: 18px, font-family: $font-secondary, font-weight: 400, letter-spacing: normal ),
+    secondary-22: ( font-size: 22px, font-family: $font-secondary, font-weight: 400, letter-spacing: normal ),
+    secondary-28: ( font-size: 28px, font-family: $font-secondary, font-weight: 400, letter-spacing: normal ),
+    secondary-42: ( font-size: 42px, font-family: $font-secondary, font-weight: 400, letter-spacing: normal )
+);
+
+// breakpoints & grid
+$grid-columns: 12;
+$grid-paddings: 10px;
+
+$breakpoints: (
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
+);
+
+// buttons
+$btn-height: 40px;
+$btn-paddings: 15px;
+$btn-border-radius: 5px;

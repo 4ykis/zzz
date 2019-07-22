@@ -1,0 +1,56 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $grid-paddings;
+    @include media-up(sm) {
+        width: 750px;
+    }
+    @include media-up(md) {
+        width: 970px;
+    }
+    @include media-up(lg) {
+        width: 1160px;
+    }
+}
+.row {
+    margin: 0 -#{$grid-paddings};
+}
+
+@for $i from 1 to $grid-columns {
+    .col-#{$i} {
+        width: (100% / $grid-columns) * $i;
+        padding: 0 $grid-paddings;
+    }
+}
+@include media-up(xs) {
+    @for $i from 1 to $grid-columns {
+        .col-xs-#{$i} {
+            width: (100% / $grid-columns) * $i;
+            padding: 0 $grid-paddings;
+        }
+    }
+}
+@include media-up(sm) {
+    @for $i from 1 to $grid-columns {
+        .col-sm-#{$i} {
+            width: (100% / $grid-columns) * $i;
+            padding: 0 $grid-paddings;
+        }
+    }
+}
+@include media-up(md) {
+    @for $i from 1 to $grid-columns {
+        .col-md-#{$i} {
+            width: (100% / $grid-columns) * $i;
+            padding: 0 $grid-paddings;
+        }
+    }
+}
+@include media-up(lg) {
+    @for $i from 1 to $grid-columns {
+        .col-lg-#{$i} {
+            width: (100% / $grid-columns) * $i;
+            padding: 0 $grid-paddings;
+        }
+    }
+}

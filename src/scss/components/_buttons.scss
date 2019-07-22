@@ -1,0 +1,47 @@
+.btn {
+    display: inline-block;
+    line-height: $btn-height;
+    border-radius: $btn-border-radius;
+    border: none;
+    background: none;
+    text-align: center;
+    transition: .3s;
+    @include typeset("primary-18", 600);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-link {
+    color: $blue;
+    line-height: auto;
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+    &:visited {
+        color: lighten($blue, 30%);
+    }
+}
+
+.btn-primary {
+    color: $primary-font-color;
+    background: $primary-color;
+}
+
+.btn-secondary {
+    color: $secondary-font-color;
+    background: $secondary-color;
+}
+
+.btn-outline-primary {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+}
+
+.btn-secondary-primary {
+    border: 1px solid $secondary-color;
+    color: $secondary-color
+}
